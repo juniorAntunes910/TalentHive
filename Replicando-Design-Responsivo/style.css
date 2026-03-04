@@ -134,6 +134,11 @@
 /* End of midleo-video*/
 
 /* Common Question */
+
+#cell-desktop{
+    display: none;
+}
+
 #common-question {
     display: flex;
 }
@@ -550,31 +555,71 @@
 
     /*Start Common Question*/
 
+    #cell-mobile{
+        display: none;
+    }
+
+    #cell-desktop{
+        display:block;
+        width: 32.313rem;
+        height: 51.188rem;
+    }
+    
+
+    @media screen and (min-width: 1024px) {
+    /* Ajuste para o container pai ser fluido */
+    #common-question {
+        padding: 5rem 0; /* Mais respiro em cima e embaixo */
+    }
+
     .common-question-box h3 {
-        margin: 18.938rem 33.625rem 5rem 33.625rem;
-        font-size: 6.25rem;
-        line-height: 6rem;
+        margin: 0 auto 5rem auto;
+        font-size: 5rem; /* Aumentado */
+        line-height: 1.1;
+        max-width: 80%; /* Ocupa bem o centro */
     }
 
     .common-question-box-faq {
-        width: 102.5rem;
-        margin-left: 9rem;
-    }
-
-    .common-question-box-faq-img {
-        background-color: transparent;
-        border-radius: 0;
-        overflow: visible;
+        width: 95%; /* Ocupa quase a tela toda */
+        max-width: 1400px; /* Limite de segurança para monitores ultrawide */
+        height: auto;
+        margin: 0 auto;
+        padding: 5rem; /* Aumentado o espaço interno (isso deixa grande!) */
         display: flex;
-        margin-left: 1.375rem;
-        align-items: flex-end;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5rem; /* Espaço generoso entre imagem e texto */
+        border-radius: 2rem;
     }
 
+    /* Imagem fica maior */
+    .faq-left {
+        flex: 1; /* Cresce para preencher */
+        max-width: 500px; /* Controla o tamanho máximo da imagem */
+    }
 
+    #cell-desktop {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
 
+    /* Coluna das perguntas ocupa o resto do espaço */
+    .faq-right {
+        flex: 1.5; /* Ocupa mais espaço que a imagem */
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
 
-
-
+    /* Cards das perguntas mais largos */
+    .question-faq, .question-faq-open {
+        width: 100%;
+        height: auto; /* Deixa o card crescer com o texto */
+        padding: 2rem; /* Mais espaçamento interno */
+        font-size: 1.25rem; /* Aumenta a fonte do texto */
+    }
+}
 
     /*End of Common Question*/
 
