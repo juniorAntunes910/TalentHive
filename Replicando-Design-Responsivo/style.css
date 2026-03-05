@@ -135,7 +135,7 @@
 
 /* Common Question */
 
-#cell-desktop{
+#cell-desktop {
     display: none;
 }
 
@@ -171,7 +171,6 @@
     display: flex;
     margin-left: 1.375rem;
     align-items: flex-end;
-
 }
 
 .common-question-box-faq-img img {
@@ -295,6 +294,10 @@
     border-radius: 6.25rem;
     margin-left: 1.25rem;
     margin-bottom: 4.938rem;
+}
+
+#division-desktop{
+    display: none;
 }
 
 /* End Division footer */
@@ -555,74 +558,128 @@
 
     /*Start Common Question*/
 
-    #cell-mobile{
+    #cell-mobile {
         display: none;
     }
 
-    #cell-desktop{
-        display:block;
+    #cell-desktop {
+        display: block;
         width: 32.313rem;
         height: 51.188rem;
     }
-    
 
-    @media screen and (min-width: 1024px) {
-    /* Ajuste para o container pai ser fluido */
-    #common-question {
-        padding: 5rem 0; /* Mais respiro em cima e embaixo */
+    .common-question-box {
+        width: 100%;
+        margin-left: 12rem;
     }
 
-    .common-question-box h3 {
-        margin: 0 auto 5rem auto;
-        font-size: 5rem; /* Aumentado */
-        line-height: 1.1;
-        max-width: 80%; /* Ocupa bem o centro */
+    .common-question-title {
+        padding-bottom: 6rem;
     }
 
     .common-question-box-faq {
-        width: 95%; /* Ocupa quase a tela toda */
-        max-width: 1400px; /* Limite de segurança para monitores ultrawide */
-        height: auto;
-        margin: 0 auto;
-        padding: 5rem; /* Aumentado o espaço interno (isso deixa grande!) */
         display: flex;
+        justify-content: space-around;
         align-items: center;
-        justify-content: space-between;
-        gap: 5rem; /* Espaço generoso entre imagem e texto */
-        border-radius: 2rem;
+        width: 90%;
+        height: 731px;
+        background-color: #f3f3f3;
+        border-radius: 1.25rem;
+        margin-left: 1.25rem;
+        padding-top: 1rem;
     }
 
-    /* Imagem fica maior */
-    .faq-left {
-        flex: 1; /* Cresce para preencher */
-        max-width: 500px; /* Controla o tamanho máximo da imagem */
+    .common-question-box-faq-img {
+        margin-top: 23.8rem;
+        background-color: #f3f3f3;
     }
 
-    #cell-desktop {
-        width: 100%;
-        height: auto;
-        display: block;
+    .common-question-box-faq-img img {
+        padding-top: 60%;
     }
 
-    /* Coluna das perguntas ocupa o resto do espaço */
-    .faq-right {
-        flex: 1.5; /* Ocupa mais espaço que a imagem */
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
+    .question-faq {
+        width: 52rem;
+        height: 8.125rem;
+        margin-bottom: 1rem;
+        font-size: 1.87rem;
     }
 
-    /* Cards das perguntas mais largos */
-    .question-faq, .question-faq-open {
-        width: 100%;
-        height: auto; /* Deixa o card crescer com o texto */
-        padding: 2rem; /* Mais espaçamento interno */
-        font-size: 1.25rem; /* Aumenta a fonte do texto */
+    .question-faq i {
+        font-size: 1rem;
+        margin-right: 1rem;
     }
-}
+
+    .question-faq-open {
+        width: 52rem;
+        height: 11.93rem;
+        margin-bottom: 1rem;
+        font-size: 1.87rem;
+    }
+
+    #faq-title-icon i {
+        font-size: 1rem;
+        padding-left: 17rem;
+    }
+
+    .question-faq-description {
+        font-size: 1.25rem;
+        margin-top: 1.3rem;
+        line-height: 1.3rem;
+    }
+
+
+
+
 
     /*End of Common Question*/
 
+
+    /* Start of footer*/
+    #footer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    .footer-title {
+        font-family: var(--font-logo);
+        line-height: 5rem;
+        font-weight: var(--font-important-title);
+        font-size: 6rem;
+        color: #fff;
+        letter-spacing: var(--font-important-letter-spacing);
+        padding: 0 0 1.313rem -5rem;
+        margin-left: 3rem;
+
+    }
+
+    #footer-division {
+        display: none;
+    }
+
+    #division-desktop{
+        display: block;
+        padding: 0 102rem 0.1rem 0;
+        background-color: #fff;
+        margin-top: 8.37rem;
+        margin-left: 4.7rem;
+        margin-bottom: 10rem;
+    }
+
+    .footer-header-description{
+        
+    }
+
+
+
+
+    /*Start of footer 1 */
+
+
+    /* End of footer 1 */
+
+    /* End of footer*/
 
     /* End of Desktop */
 }
